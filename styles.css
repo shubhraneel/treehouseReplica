@@ -197,7 +197,7 @@ body {
   background-image: linear-gradient(to top, #303853 40%, transparent 60%), url(images/firstSec.jpg);
   padding: 12rem 0 2rem 0;
   background-position-y: 0, -210px;
-  background-size: 100%;
+  background-size: 100%, 100%;
   background-attachment: fixed;
   background-repeat: no-repeat;
 }
@@ -733,6 +733,12 @@ hr {
     visibility: hidden;
   }
 
+  .signup {
+    background-attachment: scroll;
+    background-position-y: 0, 50px;
+    background-color: #303853;
+  }
+
   .navigation--bar--mobile {
     height: 5rem;
     visibility: visible;
@@ -749,4 +755,9 @@ hr {
   .partnership-image--container {
     width: 100%;
   }
+
+  .footer .treehouse-icon {
+    width: 100%;
+  }
+
 }
