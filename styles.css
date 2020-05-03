@@ -199,6 +199,7 @@ body {
   background-position-y: 0, -210px;
   background-size: 100%;
   background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
 .signup__container {
@@ -713,6 +714,13 @@ hr {
 
   .section-partnerships {
     margin-top: 0;
+    padding-top: 9rem;
+    padding-bottom: 2rem;
+  }
+
+  .partnership-image--container {
+    width: 50%;
+    margin-bottom: 5rem;
   }
 }
 
@@ -732,5 +740,13 @@ hr {
 
   .navigation {
     padding: 1.8rem 2rem;
+  }
+
+  .section-partnerships {
+    padding-bottom: 0;
+  }
+
+  .partnership-image--container {
+    width: 100%;
   }
 }
