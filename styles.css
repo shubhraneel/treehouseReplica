@@ -103,7 +103,7 @@ body {
   width: 2.5rem;
   height: 0.2rem;
   border-radius: 100px;
-  background-color: rgb(70, 70, 70);
+  background-color: rgb(130,130, 130);
   transition: all 0.3s;
 }
 
@@ -111,7 +111,7 @@ body {
   content: "";
   height: 100%;
   width: 100%;
-  background-color: rgb(70, 70, 70);
+  background-color: rgb(130, 130, 130);
   position: absolute;
   left: 0;
   border-radius: 100px;
@@ -729,6 +729,12 @@ hr {
   .form__field {
     width: 100%;
   }
+
+  .learn__bottom {
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
   .navigation--bar--tablet {
     visibility: hidden;
   }
@@ -745,7 +751,7 @@ hr {
   }
 
   .navigation {
-    padding: 1.8rem 2rem;
+    padding: 1.8rem 1rem;
   }
 
   .section-partnerships {
@@ -759,5 +765,4 @@ hr {
   .footer .treehouse-icon {
     width: 100%;
   }
-
 }
