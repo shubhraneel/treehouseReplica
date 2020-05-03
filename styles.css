@@ -698,6 +698,10 @@ hr {
   .navigation--bar--tablet {
     visibility: visible;
   }
+
+  .svg--flexible {
+    display: none;
+  }
 }
 
 @media (max-width: 680px) {
