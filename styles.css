@@ -705,6 +705,19 @@ hr {
   .footer-row {
     width: 100%;
   }
+
+  .quality--video {
+    margin: 1.5rem;
+  }
+
+  .quality {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .quality--valuable {
+    margin-bottom: 0;
+  }
 }
 
 @media (max-width: 960px) {
@@ -766,7 +779,7 @@ hr {
 
   .section-partnerships {
     margin-top: 0;
-    padding-top: 9rem;
+    padding-top: 5rem;
     padding-bottom: 2rem;
   }
 
@@ -816,5 +829,14 @@ hr {
 
   .footer .treehouse-icon {
     width: 100%;
+  }
+
+  .navigation,
+  .signup__container,
+  .features,
+  .qualities--container,
+  .partnership-images,
+  .footer-row {
+    padding: 1rem;
   }
 }
