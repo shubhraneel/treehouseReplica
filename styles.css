@@ -189,6 +189,10 @@ body {
   visibility: hidden;
 }
 
+.navigate--sign {
+  margin-bottom: 2rem;
+}
+
 .signup {
   background-image: linear-gradient(to top, #303853 40%, transparent 60%), url(images/firstSec.jpg);
   padding: 12rem 0 2rem 0;
