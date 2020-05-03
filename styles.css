@@ -103,11 +103,12 @@ body {
   width: 2.5rem;
   height: 0.2rem;
   border-radius: 100px;
-  background-color: rgb(130,130, 130);
+  background-color: rgb(130, 130, 130);
   transition: all 0.3s;
 }
 
-.navigation__burger:before, .navigation__burger:after {
+.navigation__burger:before,
+.navigation__burger:after {
   content: "";
   height: 100%;
   width: 100%;
@@ -116,24 +117,26 @@ body {
   left: 0;
   border-radius: 100px;
   opacity: 1;
-  transition: all 0.3s; 
-}
-.navigation__burger:before {
-  top: -0.8rem; 
-}
-.navigation__burger:after {
-  top: 0.8rem; 
+  transition: all 0.3s;
 }
 
-.navigation__checkbox:checked + .navigation__toggler .navigation__burger {
+.navigation__burger:before {
+  top: -0.8rem;
+}
+
+.navigation__burger:after {
+  top: 0.8rem;
+}
+
+.navigation__checkbox:checked+.navigation__toggler .navigation__burger {
   background-color: transparent;
 }
 
-.navigation__checkbox:checked + .navigation__toggler .navigation__burger:before {
+.navigation__checkbox:checked+.navigation__toggler .navigation__burger:before {
   transform: translateY(0.8rem) rotate(45deg);
 }
 
-.navigation__checkbox:checked + .navigation__toggler .navigation__burger:after {
+.navigation__checkbox:checked+.navigation__toggler .navigation__burger:after {
   transform: translateY(-0.8rem) rotate(-45deg);
 }
 
@@ -180,7 +183,7 @@ body {
   font-size: 1.5rem;
 }
 
-.navigation__checkbox:checked ~ .navigation__menu{
+.navigation__checkbox:checked~.navigation__menu {
   visibility: visible;
   transform: translateY(0);
 }
@@ -319,10 +322,11 @@ body {
 }
 
 .form__check--input {
-  position: relative;
+  /* position: relative;
   vertical-align: middle;
   background-color: rgb(228, 228, 228);
-  border-color: rgb(179, 179, 179);
+  border-color: rgb(179, 179, 179); */
+  display: none;
 }
 
 .form__check--input:focus {
@@ -331,6 +335,54 @@ body {
 
 .form__check--label:hover {
   cursor: pointer;
+}
+
+.form__check--mark {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  vertical-align: top;
+  position: relative;
+  border-style: solid;
+  border-color: rgb(220, 220, 220);
+  border-width: 3px;
+  border-radius: 4px;
+  transition: all .3s;
+}
+
+.form__check--mark:after {
+  content: "";
+  position: absolute;
+  top: 15.5%;
+  left: 8%;
+  display: none;
+  height: 3px;
+  width: 7px;
+  border-width: 0 0 3px 3px;
+  border-color: white;
+  border-style: solid;
+  transform: rotate(-45deg);
+  transition: all .3s;
+}
+
+.form__check--label:hover~.form__check--mark {
+  border-color: rgb(100, 100, 100);
+}
+
+.form__check--input:checked~.form__check--label .form__check--mark {
+  background-color: rgb(56, 123, 171);
+  border-color: rgb(56, 123, 171);
+}
+
+.form__check--input:checked~.form__check--label .form__check--mark:after {
+  display: block;
+}
+
+.form__check--text {
+  display: inline-block;
+  width: 90%;
+  vertical-align: top;
+  margin-left: 10px;
 }
 
 .form__button {
